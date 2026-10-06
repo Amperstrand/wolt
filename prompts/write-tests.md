@@ -41,3 +41,10 @@ the wire contract, and stay leak-gate clean.
 - Empty categories are SERVED (11 categories at BRLO, one empty) and
   dangling `item_ids` exist — the fake needs both or the filters are
   untested theater.
+- Reuse survey pays: this package's two API endpoints came from OSS
+  (woltcheck, personoids-lite MIT skill) found by grepping the exact
+  hostname — always run that search before reversing bundles; the
+  dehydrate menu lane was the part nobody had solved.
+- Parity lane: cents-exact prices feed scripts/parity.ts directly; the
+  BRLO run proved systematic own-brand bottle discounts on this
+  surface (−0.30..−1.00) beside byte-parity commodities.
