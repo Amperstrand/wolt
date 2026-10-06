@@ -8,7 +8,7 @@ import { WoltClient } from "../dist/index.js";
 
 const WORKED_EXAMPLES = [
   { slug: "brlo-brwhouse", name: "BRLO Chicken & Beer Gleisdreieck (Berlin)" },
-  { slug: "hasir-kreuzberg", name: "Hasir Kreuzberg (Berlin) — bridge-era classic" },
+  { slug: "risa-chicken", name: "Risa Chicken Schönhauser (Berlin — found via /v1/pages/search)" },
 ];
 
 const client = new WoltClient();

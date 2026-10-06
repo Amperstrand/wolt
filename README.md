@@ -28,6 +28,12 @@ npx wolt health brlo-brwhouse    # exit 1 when closed
 npx wolt menu brlo-brwhouse
 ```
 
+Slug discovery: `POST restaurant-api.wolt.com/v1/pages/search`
+(`{"q":…,"target":"venues","lat":…,"lon":…}` with the
+`app-language`/`platform`/`client-version` header set) returns venue
+titles with `link.target` slugs — verified live; this is how the
+README's worked examples were found.
+
 ## Error semantics
 
 A thrown `WoltError` (reason `"network"`) means the surface was
