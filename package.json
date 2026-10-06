@@ -1,0 +1,25 @@
+{
+  "name": "wolt",
+  "version": "0.1.0",
+  "description": "Read-only Wolt storefront client. Venue + live status from consumer-api.wolt.com (endpoints proven by OSS), menu from the venue page's dehydrated React-Query state. No orders, no payment.",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": { "wolt": "./dist/cli.js" },
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit --pretty false",
+    "gate": "node scripts/leak-scan.mjs . --history",
+    "prepare": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "typescript": "~6.0.3",
+    "vitest": "^3.0.0"
+  }
+}
